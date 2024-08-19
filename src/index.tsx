@@ -5,10 +5,15 @@ import reportWebVitals from './reportWebVitals';
 // react router
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-// css
-import './index.css';
+// pages
 import { Layout } from './pages/layout/Layout';
 import { ErrorPage } from './pages/errorPage/ErrorPage';
+
+// contexts
+import { CacheProvider } from './context/cacheContext/CacheContext';
+
+// css
+import './index.css';
 
 const router = createBrowserRouter([
 	{
@@ -25,7 +30,9 @@ document.getElementById('root') as HTMLElement
 
 root.render(
 	<React.StrictMode>
-		<RouterProvider router={router}/>
+		<CacheProvider>
+			<RouterProvider router={router}/>
+		</CacheProvider>
 	</React.StrictMode>
 );
 

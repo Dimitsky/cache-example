@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 
 // react router
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 // pages
 import { Layout } from './pages/layout/Layout';
@@ -19,7 +19,7 @@ import { SinglePage } from './pages/singlePage/SinglePage';
 // css
 import './index.css';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{
 		path: '/', 
 		element: <Layout />, 

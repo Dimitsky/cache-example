@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Пример кеширования сетевых запросов 
+
+Кнопка refetch обновляет данные с сервера если кеш просрочен (через 30 секунд). 
+Кнопка invalidate принудительно делает кеш устаревшим. 
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

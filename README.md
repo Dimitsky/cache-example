@@ -1,5 +1,7 @@
 # Пример кеширования сетевых запросов 
 
+Пример работы приложения на GitHub Pages: [https://dimitsky.github.io/cache-example/](https://dimitsky.github.io/cache-example/)
+
 Кнопка refetch обновляет данные с сервера если кеш просрочен (через 30 секунд). 
 Кнопка invalidate принудительно делает кеш устаревшим. 
 

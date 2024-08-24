@@ -16,8 +16,6 @@ type CacheBody = {
     data: any, 
 }
 
-type CahceProviderProps = {}
-
 const CacheContext = createContext<ContextType | null>(null);
 
 export function useCache() {
@@ -32,7 +30,7 @@ export function useCache() {
     return value;
 }
 
-export function CacheProvider({ children }: PropsWithChildren<CahceProviderProps>) {
+export function CacheProvider({ children }: PropsWithChildren) {
     const map = new Map<string, CacheBody>();
 
     // Получить кеш по ключу 

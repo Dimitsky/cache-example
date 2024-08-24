@@ -14,13 +14,25 @@ import { CacheProvider } from './context/cacheContext/CacheContext';
 
 // css
 import './index.css';
+import { HomePage } from './pages/homePage/HomePage';
+import { SinglePage } from './pages/singlePage/SinglePage';
 
 const router = createBrowserRouter([
 	{
 		path: '/', 
 		element: <Layout />, 
 		errorElement: <ErrorPage />, 
-		children: [], 
+		children: [
+			{
+				index: true, 
+				path: '/', 
+				element: <HomePage />, 
+			}, 
+			{
+				path: '/:postId', 
+				element: <SinglePage />, 
+			}, 
+		], 
 	}
 ]);
 

@@ -12,10 +12,12 @@ import { ErrorPage } from './pages/errorPage/ErrorPage';
 // contexts
 import { CacheProvider } from './context/cacheContext/CacheContext';
 
-// css
-import './index.css';
+// pages
 import { HomePage } from './pages/homePage/HomePage';
 import { SinglePage } from './pages/singlePage/SinglePage';
+
+// css
+import './index.css';
 
 const router = createBrowserRouter([
 	{
